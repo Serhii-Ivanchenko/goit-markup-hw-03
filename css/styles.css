@@ -71,22 +71,19 @@ h3 {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #e7e9fc;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 .nav-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  background-color: tomato;
 }
 .logo {
   margin-right: 76px;
@@ -104,7 +101,9 @@ h3 {
 }
 
 .nav-link {
-  display: inline-block;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -127,8 +126,8 @@ address {
   display: flex;
 }
 
-.address-item {
-    margin-right: 40px;
+.address-item:not(:last-child) {
+  margin-right: 40px;
 }
 .address-link {
   color: #434455;
