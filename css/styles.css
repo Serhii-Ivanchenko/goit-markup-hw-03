@@ -47,24 +47,49 @@ h3 {
 }
 
 .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid tomato;
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 /* img {
     display: block;
 } */
 /* #endregion */
 
-/* #region Navigation */
+/* #region Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+  padding-left: 156px;
+  padding-right: 156px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.nav-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: tomato;
+}
 .logo {
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   color: #4d5ae5;
   font-size: 18px;
@@ -79,6 +104,7 @@ h3 {
 }
 
 .nav-link {
+  display: inline-block;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -97,6 +123,13 @@ address {
   font-style: normal;
 }
 
+.address-list {
+  display: flex;
+}
+
+.address-item {
+    margin-right: 40px;
+}
 .address-link {
   color: #434455;
 }
