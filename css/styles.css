@@ -11,6 +11,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: inherit;
+  color: currentColor;
+  border: none;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -137,11 +143,16 @@ address {
 /* #region Hero */
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
 }
 
 .hero-title {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
   color: #fff;
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -149,6 +160,9 @@ address {
 }
 
 .hero-button {
+  padding: 16px 32px;
+  border-radius: 4px;
+
   color: #fff;
   font-weight: 500;
   line-height: 1.5;
