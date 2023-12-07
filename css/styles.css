@@ -178,7 +178,29 @@ address {
 /* #endregion */
 
 /* #region Benefits */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 24px;
+}
+.benefits-item .item-title {
+  margin-bottom: 8px;
+}
 /* #endregion */
 
 /* #region Out Team */
