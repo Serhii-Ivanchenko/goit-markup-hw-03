@@ -160,8 +160,12 @@ address {
 }
 
 .hero-button {
+  display: block;
   padding: 16px 32px;
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
 
   color: #fff;
   font-weight: 500;
@@ -246,11 +250,11 @@ address {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-item {
   width: calc((100% - 2 * 24px) / 3);
-  margin-bottom: 24px;
 }
 
 .portfolio-item:nth-last-child(-n + 3) {
@@ -276,13 +280,14 @@ address {
 
 .footer a {
   margin-right: 0;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-light {
   color: #f4f4fd;
 }
 .footer-text {
-  margin-top: 16px;
   width: 264px;
   color: #f4f4fd;
 }
